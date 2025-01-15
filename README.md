@@ -13,8 +13,8 @@ hcl
 
 # Terraform codes
 
-  # provider.tf
-  terraform {
+  **provider.tf
+  **terraform {
     required_providers {
       aws = {
         source  = "hashicorp/aws"
