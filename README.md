@@ -1,2 +1,1 @@
-# Terraform S3 Bucket
-# w/ backend upload
+# Terraform S3 Bucket w/ backend upload
