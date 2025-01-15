@@ -13,8 +13,8 @@ hcl
 
 # Terraform codes
 
-  **provider.tf
-  **terraform {
+  provider.tf
+  terraform {
     required_providers {
       aws = {
         source  = "hashicorp/aws"
@@ -22,18 +22,18 @@ hcl
       }
     }
   }
-  
+
   # Configure the AWS Provider
-  provider "aws" {
+  provider "aws" { 
     region = "us-east-1"
   }
 
-# main.tf
-
+main.tf
 terraform{
     backend "s3" {
     bucket = "aalimsee-ce9-test-bucket" 
-    key    = "Users/aaronlim/ce9-exercises/exercise1/terraform.tfstate" # Replace the value of key to <your suggested name>.tfstate for example terraform-ex-ec2-<NAME>.tfstate
+    key    = "Users/aaronlim/ce9-exercises/exercise1/terraform.tfstate" 
+    # Replace the value of key to <your suggested name>.tfstate for example terraform-ex-ec2-<NAME>.tfstate
     region = "us-east-1"
   }
 }
