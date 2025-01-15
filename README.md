@@ -13,7 +13,7 @@ hcl
 
 # Terraform codes
 
-#provider.tf
+# provider.tf
 terraform {
   required_providers {
     aws = {
@@ -28,7 +28,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-#main.tf
+# main.tf
 
 terraform{
     backend "s3" {
