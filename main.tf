@@ -2,7 +2,8 @@
 terraform{
     backend "s3" {
     bucket = "aalimsee-ce9-test-bucket" 
-    key    = "Users/aaronlim/ce9-exercises/exercise1/terraform.tfstate" # Replace the value of key to <your suggested name>.tfstate for example terraform-ex-ec2-<NAME>.tfstate
+    key    = "Users/aaronlim/ce9-exercises/exercise1/aalimsee-ce9-terraform.tfstate" 
+    # Replace the value of key to <your suggested name>.tfstate, eg. terraform-ex-ec2-<NAME>.tfstate
     region = "us-east-1"
   }
 }
@@ -13,7 +14,7 @@ resource "aws_s3_bucket" "bucket" {
   force_destroy = true
 
   tags = {
-    Name        = "aalimsee Bucket" # Change to your own name
+    Name        = "aalimsee-ce9 S3 Bucket" # Change to your own name
     Environment = "Dev"
   }
 }
